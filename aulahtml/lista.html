@@ -1,0 +1,54 @@
+<button onclick="receita()">Receita</button>
+<button onclick="preparo()">Preparo</button>
+<h1>Ingredientes</h1>
+<ul  id="ingredientes">
+
+</ul>
+<h1>Como Fazer</h1>
+
+<ol id="preparo">
+
+</ol>
+<script>
+    ingredientes = [
+        'Ovos',
+        'Açúcar',
+        'Leite',
+        'Farinha de Trigo',
+        'Manteiga',
+        'Fermento',
+        'chocolate'
+
+    ]
+    preparos=[
+        'Em um recipiente adicione o Açúcar, a Manteiga e os Ovos e bata bem.',
+        'Depois adicione a Farinha de Trigos aos poucos, sempre batendo para não empelotar.',
+        'Quando a massa estiver em uma consistencia pesada, adicione o Leite e uma colher de chá do Fermento.',
+        'Unte uma forma com Manteiga e Farinha de Trigo para assar a massa.',
+        'Logo em seguida despeje a massa na forma já untada e ponha no forno á 180° durante 40 min.',
+        'E está pronto!!'
+    ]
+    function receita() {
+        lista = ''
+        for (let i = 0; i < ingredientes.length; i++) {
+            console.log('no for antes', i, lista)
+            // lista = lista + '<li>'+ingredientes[i]+'</li>';
+            lista = lista + `<li>${ingredientes[i]}</li>`;
+            console.log('no for depois', lista)
+
+        }
+        console.log('fim', lista)
+        document.getElementById('ingredientes').innerHTML = lista
+    }
+
+    function preparo() {
+        lista = ''
+        for (let i = 0; i < preparos.length; i++) {
+            console.log('item', preparos[i] )
+            lista = lista + `<li>${preparos[i]}</li>`
+            console.log('lista', lista )
+        }
+        document.getElementById('preparo').innerHTML = lista
+    }
+
+</script>

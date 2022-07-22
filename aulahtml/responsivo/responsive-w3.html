@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>w3.css</title>
+    <style>
+        @media only screen and (max-width: 800px) and (min-width:600px) {
+            .layout-800 {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-container w3-green">
+        <h1>W3Schools Demo</h1>
+        <p>Resize this responsive page</p>
+    </div>
+    <button class="w3-button w3-yellow">Yellow</button>
+    <div class="w3-row-padding">
+        <div class="w3-quarter layout-800">
+            <h2>Londres</h2>
+            <p>Londres é a capital da Inglaterra.</p>
+            <p>É a cidade mais populosa do Reino Unido,com uma área metropolitana de
+                mais de 13 milhões de habitantes.</p>
+        </div>
+
+        <div class="w3-quarter layout-800">
+            <h2>Paris</h2>
+            <p>Paris é a capital da Fraça.</p>
+            <p>É a cidade mais populosa do Reino Unido,com uma área metropolitana de
+                mais de 13 milhões de habitantes.</p>
+        </div>
+        <div class="w3-quarter layout-800">
+            <h2>Tokyo</h2>
+            <p>Tokyo é a capital da Japão.</p>
+            <p>É a cidade mais populosa do Reino Unido,com uma área metropolitana de
+                mais de 13 milhões de habitantes.</p>
+        </div>
+        <div class="w3-quarter layout-800">
+            <h2>Brasilia</h2>
+            <p>Brasilia é a capital da Brasil.</p>
+            <p>É a cidade mais populosa do Reino Unido,com uma área metropolitana de
+                mais de 13 milhões de habitantes.</p>
+        </div>
+    </div>
+    <li class="w3-bar">
+        <span onclick="this.parentElement.style.display='none'"
+            class="w3-bar-item w3-button w3-xlarge w3-right">&times;</span>
+        <img src="img_avatar2.png" class="w3-bar-item w3-circle" style="width:85px">
+        <div class="w3-bar-item">
+            <span class="w3-large">Mike</span><br>
+            <span>Web Designer</span>
+        </div>
+    </li>
+    <i class="fa fa-male"></i>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">&times;</span>
+                <p>Some text in the Modal..</p>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

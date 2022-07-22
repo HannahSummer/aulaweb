@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../aulacss/style.css">
+    <!-- Uso de Faveicon -->
+    <link rel="shortcut icon" href="/imagens/favicon-16x16.png" type="image/x-icon">
+    <style>
+        p {
+            border: 2px solid powderblue;
+            padding: 26px;
+        }
+
+        a:link,
+        a:visited {
+            /* background-color: #7698ff; */
+            color: rgb(0, 0, 0);
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover,
+        a:active {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+        }
+
+
+        .background {
+            background-image: url(/imagens/galaxia.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+
+
+        .blur {
+            backdrop-filter: blur(13px);
+            height: 100%;
+            width: 100%;
+        }
+
+        table {
+            font: size 10w;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+
+        th,
+        td {
+            /* background-color: #3d0761; */
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        td,
+        th {
+            border: 1px solid #ffffff;
+            text-align: left;
+            padding: 3px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            padding-right: 30px;
+            padding-left: 40px;
+        }
+
+        tr:nth-last-child(odd) {
+            background-color: #ebd8ef;
+        }
+
+        tr:nth-child(odd) {
+            padding: 3px;
+            padding-left: 30px;
+            background-color: #66057a;
+        }
+
+        table {
+            border-spacing: 30px;
+        }
+
+        th:nth-child(odd),
+        td:nth-child(odd) {
+            background-color: rgba(255, 50, 200, 0.4);
+        }
+
+        tr {
+            border-bottom: 3px solid rgb(85, 1, 71);
+        }
+
+        .demo {
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body class="background blur">
+    <div style="background-color: rgb(197, 15, 15); text-align:center">OI</div>
+    <div style="background-color: #15b0d3; text-align:center">OI</div>
+    <div style="background-color: rgb(67, 23, 198); text-align:center">OI</div>
+    <!-- Títulos -->
+    <div style="color: red !important;">
+
+        <h1 style="color:green ;"> título <mark>um</mark></h1>
+        <h2> título <sub>dois</sub></h2>
+        <h3>título <sup>três</sup></h3>
+    </div>
+    <h4 style="border:2px solid Tomato;text-align:center"> título quatro</h4>
+    <h5> título cinco</h5>
+    <h6> título seis</h6>
+    <!-- O hr serve para realizar uma quebra temática-->
+    <hr>
+    <!-- Paragrafos -->
+    <p class="css borda" style="font-family:verdana ; text-align:center"> Este é meu primeiro parágrafo</p>
+    <p style="margin: 50px; ;" title="Eu sou uma dica de ferramenta"> Este é meu <ins>segundo</ins> <del>
+            paragrafo</del></p>
+    <!-- Links -->
+    <a href="https://pt-br.facebook.com"> Este é um link sub</a>
+    <!-- o br serve para fazer uma qubra de linha -->
+    <br>
+    <!-- Imagem Paisagem -->
+    <img alt="Aqui é imagem" title="imagem" src="/imagens/paisagem.jpg">
+    <!-- O pre tem a quase a mesma função do p, mas segue tudo da forma que foi escrita-->
+    <pre>
+            oi
+            ola como vai
+            tudo bom
+        </pre>
+
+    <!-- strong e b servem para deixar um texto em negrito, mas o strong tem maior enfase -->
+    <b> Este é um texto em negrito</b><br>
+    <strong> Este é um texto importante </strong> <br>
+    <!-- "i" e "em" são usadas para deixar o texto italico e em da uma enfase-->
+    <i> Este é um texto italico</i><br>
+    <em> Este texto tem enfase</em><br>
+    <!-- small reprenta textos pequenos -->
+    <small>Este é um texto pequeno</small><br>
+    <!-- Tipos de links -->
+    <a href="#btn" target="_blank">Visita ao w3schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_self">Visita ao w3schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_parent">Visita ao w3schools!</a><br>
+
+    <!-- uso dos id para pular de um lugar para outro-->
+    <a href="./aula1.html#C4">Pule para o capítulo 4</a>
+    <a href="./aula1.html#C7">Pule para o capítulo 7</a>
+    <h2>Capítulo 1</h2>
+    <p>Era uma vez</p>
+
+    <h2>Capítulo 2</h2>
+    <p>baalalblablballab</p>
+
+    <h2>Capítulo 3</h2>
+    <p>huueihdoqwg</p>
+
+    <h2 id="C4">Capítulo 4</h2>
+    <p>lllkhgdthhh</p>
+
+    <h2>Capítulo 5</h2>
+    <p>e assim acaba</p>
+
+    <h2>Capítulo 6</h2>
+    <p>certo dia</p>
+
+    <h2 id="C7">Capítulo 7</h2>
+    <p>blallalalalla</p>
+
+    <h2>Capítulo 8</h2>
+    <p>iniciando</p>
+
+    <!-- Imagem Mário -->
+    <a href="/aulahtml/test.html" target="_top">
+        <img src="/imagens/mario.png" width="300">
+    </a>
+
+    <a id="btn" href="https://www.w3schools.com/" target="_parent"><button>Clique aqui</button></a><br>
+    <a href="mailto:hannahlaisa@gmail.com"> Enviar email</a>
+    <button style="border-color: red yellow green blue;" onclick="document.location= './test.html'"
+        title="Testando título do botão">Clique Aqui</button>
+    <!-- Imagem Mario pequeno -->
+    <p><img src="/imagens/mario.png" alt="Aqui uma imagem" style="float:right;width: 46px;height: 46px;">
+        Aqui uma imagem </p>
+
+    <nav>
+        <ul>
+            <li>
+                <div class="cor-roxa"><a href="./tabela.html">Tabelas</a></div>
+            </li><br>
+            <li>
+                <div class="cor-roxa"><a href="./lista.html"> Listas</a> </div>
+            </li><br>
+            <li>
+                <div class="cor-roxa"><a href="./layout.html">Layout</a></div>
+            </li><br>
+            <li>
+                <div class="cor-roxa"><a href="./form.html">Formulário</a></div>
+            </li><br>
+
+            <li>
+                <div class="cor-roxa"><a href="/aulahtml/responsivo/responsive-css.html">Responsive Css</a></div>
+            </li><br>
+            <li>
+                <div class="cor-roxa"><a href="/aulahtml/responsivo/responsive-w3.html">Responsive W3</a></div>
+            </li><br>
+            <li>
+                <div class="cor-roxa"><a href="/aulahtml/responsivo/responsive-bs.html">Responsive Bs</a></div>
+            </li><br>
+        </ul>
+    </nav>
+    <!-- Um exemplo de tabela -->
+    <table style="width:100%">
+        <caption>Esta é uma legenda</caption>
+        <tr>
+            <th rowspan="" style="height:200px">Nome</th>
+            <th>Sobrenome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Jacilene</td>
+            <td>Carolina</td>
+            <td>38</td>
+        </tr>
+        <tr>
+            <td>Hannah</td>
+            <td>Summer</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Henning</td>
+            <td>Summer</td>
+            <td>38</td>
+        </tr>
+        <tr>
+            <td>Nazaré</td>
+            <td>Carolina</td>
+            <td>62</td>
+        </tr>
+        <tr>
+            <td>Jaqueline</td>
+            <td>Carolina</td>
+            <td>40</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- exemplo de uso da .class para chamar uma function -->
+    <button onclick="displayResult()">Mostrar</button>
+    <h2 style="color: red; font-size:20px;" class="elem">Títuklo1</h2>
+    <h2 style="color: white;" class="elem">titulo2</h2>
+    <!-- expemplo de uso do #id para chamar uma function -->
+    <h1 id="myHeader" style="color: white;"> Olá Mundo</h1>
+    <button onclick="displayResult()">Aqui um texto</button>
+    <!-- video do youtube iframe -->
+    <iframe width="560" style="border-radius: 10%;" height="315" src="https://www.youtube.com/embed/QsqxMAHhA8o"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <!-- tag que define conteudo alternativo no Javascript -->
+    <noscript>Desculpe, mas está função nao esta disponivel para seu navegado!</noscript>
+    <!-- Uso do javascript para ver data e hora -->
+    <h1 style="color: white;">Meu primeiro javascript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Clique aqui e veja a data e tempo</button>
+    <p style="color: white;" id="demo"></p>
+    <!-- exemplo de lâmpada on/off javascript -->
+    <h1 style="color: white;">Meu segundo Javascript</h1>
+    <p style="color: white;">Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+    <img id="myImage" src="/imagens/pic_bulboff.gif" width="100" height="180">
+    <p>
+        <button style="background-color:darkolivegreen;" type="button" onclick="lampada(1)">Light On</button>
+        <button style="background-color:hotpink;" type="button" onclick="lampada(0)">Light Off</button>
+    </p>
+    <script>
+        // chamar function através da .class
+        function mostrar() {
+            console.log(document.getElementsByClassName("elem"))
+            document.getElementsByClassName("elem")[0].style.display = "none"
+        }
+        // chamar function através do #id
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Tenha um lindo dia!"
+
+        }
+        // chamar function para exemplo de lâmpada on/off
+        function lampada(luz) {
+            var imagem;
+            if (luz == 0) {
+                imagem = "/imagens/pic_bulboff.gif"
+            } else {
+                imagem = "/imagens/pic_bulbon.gif"
+            }
+            document.getElementById('myImage').src = imagem;
+            console.log(document.getElementById("myImage"))
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.css{
+    color:red;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 4px -4px 1px rgba(232, 13, 20, 0.654);
+
+}
+.borda{
+
+    background-color: royalblue;
+}
+.cor-roxa{
+    background-color: purple !important;
+    width: 130px;
+
+}

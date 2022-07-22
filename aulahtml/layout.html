@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Teste de Uso Css</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* * {
+            box-sizing: border-box;
+            
+        } */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(0, 84, 40);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 260px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+        
+            padding: 20px;
+            background-color: #f1f1f1;
+            height: 260px;
+        }
+
+        section {
+            content: "";
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(42, 121, 74);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body> <br><br>
+
+    <h2 style="text-align: center; background-color: rgba(85, 107, 47, 0.404) ; font-size: 50px;"> Css Layout</h2><br>
+    <p>Neste exemplo, criamos um cabeçalho, duas colunas/caixas e um rodapé. Em telas menores,
+        as colunas se empilharão em cima umas das outras.</p>
+
+    <p>Redimensione a janela do navegador para ver o efeito responsivo (você aprenderá mais
+        sobre isso em nosso próximo capítulo - HTML Responsivo</p> <br>
+    <a style="background-color:rgb(0, 139, 116) ; color:black; padding:10px; " href="./layout.html#pais1">Pule para
+        Londres</a><br> <br> <br> <br>
+    <a style="background-color:rgb(0, 139, 34) ; color:black; padding:10px; " href="./layout.html#pais2">Pule para
+        Paris</a><br> <br> <br> <br>
+
+    <header>
+        <h2>Países</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Londres</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 style="background-color:rgba(0, 128, 55, 0.571); text-align: center;" id="pais1">Londres</h1>
+            <p style="text-align: center;">Londres é a capital da Inglaterra. É a cidade mais populosa do Reino Unido,
+                com uma área metropolitana de mais de 13 milhões de habitantes.</p>
+            <h1 style="background-color:rgba(0, 128, 55, 0.571); text-align: center;" id="pais2">Paris</h1>
+            <p style="text-align: center;">Paris é a capital da França.
+            <h1 style="background-color:rgba(0, 128, 55, 0.571); text-align: center">Tokyo</h1>
+            <p style="text-align: center;">Possue muitos habitantes.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
