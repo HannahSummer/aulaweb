@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <p>Neste exemplo vamos utilizar os attributos (method="get" e "post") </p>
+
+    <form action="https://hannahapi.herokuapp.com/clients" method="get" target="_blank"><br><br>
+        <!-- input do tipo texto -->
+        <div style="display: flex; text-align: center;">
+            <div style="width: 50%;">
+                <label for="nome">Primeiro Nome</label><br>
+                <input required type="text" id="nome" name="nome" size="100">
+            </div>
+            <div style="width: 50%;">
+                <label for="Sobrenome">Sobrenome</label><br>
+                <input required type="text" id="sobrenome" name="sobrenome" size="100"><br><br>
+            </div>
+        </div>
+        <!-- input do tipo email -->
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <!-- input do tipo numero -->
+        <label for="idade">Idade</label><br>
+        <input type="number" autofocus id="idade" required name="idade"><br><br>
+        <label for="sexo">Selecione o sexo</label>
+        <select name="sexo" id="sexo">
+            <option disabled selected>Selecione uma opçao</option>
+            <option value="masculino"> Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select><br><br>
+        <!-- input do tipo botão de envio -->
+        <input type="submit" value="Enviar por Get">
+        <input type="submit" formmethod="post" value="Enviar por Post">
+
+</body>
+
+</html>
